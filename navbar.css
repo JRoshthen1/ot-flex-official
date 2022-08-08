@@ -44,19 +44,20 @@
     background-color: gray;
 }
 .navbarMenu{
-    transform: translateX(100vw);
-    transition: ease-in-out;
-    transition-duration: 200ms;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: fixed;
     width: 100vw;
     height: 100vh;
     text-decoration: none;
-    position: absolute;
+    z-index: 20;
     background-color: rgba(255, 255, 255, 0.9);
     overflow: hidden;
+    transform: translateX(100vw);
+    transition: ease-in-out;
+    transition-duration: 200ms;
 }
 
 .openNavbarMenu{

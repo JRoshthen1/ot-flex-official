@@ -1,3 +1,16 @@
+/* Noto Sans 400 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+/* Days One 400 */
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root{
+    --white: rgb(230, 230, 230);
+    --cinnabar: #E94F37;
+    --jonquil: #F0C808;
+    --black: #000;
+}
+
+
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
@@ -7,13 +20,20 @@ html{
     padding: 0;
     list-style: none;
 }
+p,h5{
+    font-family: 'Noto Sans', sans-serif;
+}
+h1,h2,h3,h4,a{
+    font-family: 'Righteous', cursive;
+}
 .btn{
     padding: 10px 20px;
     margin: 5px;
     text-align: center;
     text-decoration: none;
     border-radius: 10px 100px / 120px;
-    background-color: rgb(242, 174, 174);
+    background-color: var(--jonquil);
+    color: var(--black);
     box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
     
 }

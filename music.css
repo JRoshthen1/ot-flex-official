@@ -2,13 +2,14 @@
 background-image: url(/assets/digitaltexture.jpg);
 background-repeat: no-repeat;
 background-size: cover;
+position: relative;
+
 }
-.musicOverlay{
+.musicOverlay{ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.862);
 }
 .about{
@@ -18,21 +19,39 @@ background-size: cover;
     align-items: center;
 }
 .aboutText{
-    width: 70%;
+    width: 390px;
     margin-bottom: 50px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 2vmin 2vmin 0 0;
+    border-bottom: 2px yellow solid;
+    color: white;
+    padding: 30px;
 }
 .about img{
     width: 100vw;
+}
+.audio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 1vmin;
 }
 
 .audioLabel{
     width: 80%;
     padding: 40px;
     margin-top: 10px;
-    background-color: #191919;
+    background-color: #191919ee;
     border-radius: 2vmin;
     color: white;
     box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
+    line-height: 1.5;
+}
+.audioLabel audio{
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 @media (min-width: 800px) {
@@ -47,7 +66,11 @@ background-size: cover;
             
         }
         .about img{
-            max-width: 400px;
+            max-width: 390px;
+        }
+
+        .audio{
+            position: relative;
         }
         
 }
