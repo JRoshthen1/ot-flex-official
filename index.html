@@ -1,15 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/ot-flex-landing/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OT-Flex Official</title>
-    <script type="module" crossorigin src="/ot-flex-landing/assets/index.01b19e02.js"></script>
-    <link rel="stylesheet" href="/ot-flex-landing/assets/index.ad11338a.css">
-  </head>
-  <body>
-    <div style="overflow: hidden; scroll-behavior: smooth;" id="app"></div>
-    
-  </body>
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/navbar.css">
+    <link rel="stylesheet" href="/hero.css">
+    <link rel="stylesheet" href="/music.css">
+</head>
+<body>
+    <nav id="navbar">
+        <a href="./" class="logo">OT-Flex</a>
+        <ul class="navbarDesktop">
+            <li><a href="#">About Me</a></li>
+            <li><a href="#">Latest Release</a></li>
+            <li><a href="#">My Non Profit</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        <button id="navbarButton">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </nav>
+    <div id="navbarMenu" class="navbarMenu">
+        <ul>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+            <li>Link</li>
+        </ul>
+    </div>
+
+    <main id="hero">
+        <div class="heroText">
+            <h1>OT-Flex Official</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, commodi. Repellendus omnis quidem reiciendis similique tempore deserunt magnam repudiandae alias voluptatem, est, consequatur sapiente consectetur architecto ducimus recusandae incidunt. Dolores?</p>
+            <div class="btnContainer">
+                <a class="btn" href="">Misic</a>
+                <a class="btn" href="">Support</a>
+            </div>
+        </div>
+
+        <img src="/assets/2.jpg" alt="">
+    </main>
+    <section id="music">
+        <div class="musicOverlay">
+        <div class="about">
+           <div class="aboutText">
+            <h1>About me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt dolore corporis, rem distinctio officiis quod explicabo nobis quo enim assumenda. Perspiciatis quas culpa nostrum aspernatur natus. Error nam voluptate vitae.</p>
+           </div>
+           <img src="/assets/3.jpg" alt="Ot flex">
+        </div>
+
+        <div class="audio">
+            <!-- Damn Thing Song -->
+            <div class="audioLabel">
+                <h1>Damn Thing</h1>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+            <audio controls src="/assets/DamnThing.mp3"></audio>
+                <div class="audioButtonContainer">
+                    <button>Download</button>
+                    <button>Share</button>
+                    <button>Spotify</button>
+                </div>
+            </div>
+            <!-- Twirl Song -->
+            <div class="audioLabel">
+                <h1>Twirl</h1>
+                <h5>Lorem ipsum dolor sit amet.</h5>
+            <audio controls src="/assets/Twirl.mp3"></audio>
+                <div class="audioButtonContainer">
+                    <button>Download</button>
+                    <button>Share</button>
+                    <button>Spotify</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </section>
+
+
+<script src="/main.js"></script>
+</body>
 </html>

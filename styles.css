@@ -1,0 +1,19 @@
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px 100px / 120px;
+    background-color: rgb(242, 174, 174);
+    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
+    
+}

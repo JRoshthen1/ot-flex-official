@@ -1,0 +1,53 @@
+#music{
+background-image: url(/assets/digitaltexture.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+.musicOverlay{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.862);
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.aboutText{
+    width: 70%;
+    margin-bottom: 50px;
+}
+.about img{
+    width: 100vw;
+}
+
+.audioLabel{
+    width: 80%;
+    padding: 40px;
+    margin-top: 10px;
+    background-color: #191919;
+    border-radius: 2vmin;
+    color: white;
+    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
+}
+
+@media (min-width: 800px) {
+    .musicOverlay{
+        display: flex;
+        flex-direction: row;
+        }
+
+        .about{
+            width: 100vmin;
+            align-items: baseline;
+            
+        }
+        .about img{
+            max-width: 400px;
+        }
+        
+}
