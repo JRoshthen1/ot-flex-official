@@ -1,6 +1,6 @@
 /* Noto Sans 400 */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
-/* Days One 400 */
+/* Righteous */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
 :root{
@@ -9,6 +9,7 @@
     --jonquil: #F0C808;
     --black: #000;
 }
+
 
 
 html{
@@ -20,20 +21,36 @@ html{
     padding: 0;
     list-style: none;
 }
-p,h5{
+p,a,h5{
     font-family: 'Noto Sans', sans-serif;
 }
-h1,h2,h3,h4,a{
+h1,h2,h3,h4{
     font-family: 'Righteous', cursive;
 }
 .btn{
-    padding: 10px 20px;
+    padding: 10px 30px;
     margin: 5px;
     text-align: center;
     text-decoration: none;
-    border-radius: 10px 100px / 120px;
+    border-radius: 100px;
     background-color: var(--jonquil);
     color: var(--black);
-    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
-    
+    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px; 
+    -webkit-transition: 300ms ease-in-out;
+    -moz-transition: 300ms ease-in-out;
+    -o-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
+}
+.btn:hover{
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}.btn:focus{
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
 }

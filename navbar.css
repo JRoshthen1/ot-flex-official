@@ -1,5 +1,5 @@
 #navbar{
-    z-index: 20;
+    z-index: 21;
     height: 50px;
     width: 100vw;
     background-color: rgba(255, 255, 255, 0.90);
@@ -12,16 +12,21 @@
 }
 .navbarDesktop{ 
     display: none;
-    width: 33%;
     flex-direction: row;
-    justify-content: space-evenly;
     text-decoration: none;
+    font-size: 2.2vmin;
+    white-space: nowrap;
+    margin-right: 40px;
 }
 .navbarDesktop a{
     text-decoration: none;
+    color: var(--black);
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .logo{
     margin-left: 20px;
+    color: var(--black);
     text-decoration: none;
 }
 #navbarButton{
@@ -29,20 +34,24 @@
     height: 40px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
-    border-radius: 5px;
+    border: hidden;
     background-color: transparent;
     margin-right: 20px;
 }
 #navbarButton span{
-    margin-top: 3px;
-    margin-bottom: 3px;
-    width: 80%;
+    width: 25px;
     height: 3px;
     border-radius: 5px;
     background-color: gray;
+    position: absolute; 
 }
+/* Toggle Animation */
+.burgerLine1{ transform: rotate(-45deg); transition: ease-in-out; transition-delay: 200ms;}
+.burgerLine2{display: none; transition: ease-in-out; transition-delay: 200ms;}
+.burgerLine3{ transform: rotate(45deg); transition: ease-in-out; transition-delay: 200ms;}
+
 .navbarMenu{
     display: flex;
     flex-direction: column;

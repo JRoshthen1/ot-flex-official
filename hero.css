@@ -7,6 +7,7 @@
     background-image: url(/assets/low-poly-grid-haikei.svg);
     background-position: center;
 }
+
 .heroText{
     margin: 20px;
     padding: 20px;
@@ -15,15 +16,23 @@
     margin: 20px;
 }
 .btnContainer{
-    margin-top: 20px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.heroImg{
+    max-width: 100%;
+    height: auto;
 }
 
 @media (min-width: 800px) {
 #hero{
     display: flex;
     flex-direction: row;
+    height: auto;
 }
-#hero img{
-    width: 50vw;
+.heroImg{
+    width: 100vh;
+    height: auto;
 }
 }
