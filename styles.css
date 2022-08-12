@@ -3,31 +3,38 @@
 /* Righteous */
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 
-:root{
+:root {
     --white: rgb(230, 230, 230);
     --cinnabar: #E94F37;
     --jonquil: #F0C808;
-    --black: #000;
+    --black: rgb(40,40,40);
 }
 
-
-
-html{
+html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-p,a,h5{
+
+p,
+a,
+h5 {
     font-family: 'Noto Sans', sans-serif;
 }
-h1,h2,h3,h4{
+
+h1,
+h2,
+h3,
+h4 {
     font-family: 'Righteous', cursive;
 }
-.btn{
+
+.btn {
     padding: 10px 30px;
     margin: 5px;
     text-align: center;
@@ -35,19 +42,14 @@ h1,h2,h3,h4{
     border-radius: 100px;
     background-color: var(--jonquil);
     color: var(--black);
-    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px; 
+    box-shadow: rgba(99, 104, 126, 0.309) 0px 7px 29px 0px;
     -webkit-transition: 300ms ease-in-out;
     -moz-transition: 300ms ease-in-out;
     -o-transition: 300ms ease-in-out;
     transition: 300ms ease-in-out;
 }
-.btn:hover{
-    -webkit-transform: scale(1.08);
-    -moz-transform: scale(1.08);
-    -o-transform: scale(1.08);
-    -ms-transform: scale(1.08);
-    transform: scale(1.08);
-}.btn:focus{
+
+.btn:hover {
     -webkit-transform: scale(1.08);
     -moz-transform: scale(1.08);
     -o-transform: scale(1.08);
@@ -55,12 +57,44 @@ h1,h2,h3,h4{
     transform: scale(1.08);
 }
 
-.socialMediaContainer{
+.btn:focus {
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    transform: scale(1.08);
+}
+
+.socialMediaContainer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     height: 50px;
     width: 300px;
-    margin-top: 10px;
+    margin-top: 4px;
+}
+
+.socialMediaContainer a {
+    height: 35px;
+    width: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialMediaContainer svg path {
+    fill: var(--black) !important;
+}
+
+.socialMediaContainer a:hover>svg path {
+    fill: var(--cinnabar) !important;
+    -webkit-transition: 200ms ease-in-out;
+    -moz-transition: 200ms ease-in-out;
+    -o-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
+}
+
+.socialMediaContainer a:active>svg path {
+    fill: var(--cinnabar) !important;
 }
