@@ -7,13 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OT-Flex Official</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="navbar.css">
-    <link rel="stylesheet" href="hero.css">
-    <link rel="stylesheet" href="music.css">
+    <link rel="stylesheet" href="./navbar.css">
+    <link rel="stylesheet" href="./hero.css">
+    <link rel="stylesheet" href="./music.css">
+    <link rel="stylesheet" href="./footer.css">
 </head>
 
 <body>
-<!--NAVIGATION BAR -->
+    <!--NAVIGATION BAR -->
     <nav id="navbar">
         <a href="./" class="logo">OT-Flex</a>
         <ul class="navbarDesktop">
@@ -39,7 +40,7 @@
         </ul>
     </div>
 
-<!-- HERO SECTION -->
+    <!-- HERO SECTION -->
     <main id="hero">
         <div class="heroText">
             <h1>OT-Flex Official</h1>
@@ -47,8 +48,8 @@
                 reiciendis similique tempore deserunt magnam repudiandae alias voluptatem, est, consequatur sapiente
                 consectetur architecto ducimus recusandae incidunt. Dolores?</p>
             <div class="btnContainer">
-                <a class="btn" tabindex="true" href="#music">Music</a>
-                <a class="btn" tabindex="true" href="">Support</a>
+                <a class="btn" tabindex href="#music">Music</a>
+                <a class="btn" tabindex href="">Support</a>
             </div>
             <div class="SocialMedia"></div>
         </div>
@@ -57,7 +58,7 @@
     </main>
 
 
-<!-- MUSIC SECTION -->
+    <!-- MUSIC SECTION -->
     <section id="music">
         <div class="musicOverlay">
             <div class="about">
@@ -77,20 +78,20 @@
                     <h5>Lorem ipsum dolor sit amet.</h5>
                     <audio controls src="./assets/DamnThing.mp3"></audio>
                     <div class="audioButtonContainer">
-                        <a href="#"><img src="./assets/download.svg">Save</a>
-                        <a href="#"><img src="./assets/share.svg">Share</a>
-                        <a href="#"><img src="./assets/spotify.svg">Spotify</a>
+                        <a href="./assets/DamnThing.mp3"><img src="./assets/download.svg" download tabindex>Save</a>
+                        <a id="shareTwirl" href="./assets/Twirl.mp3"><img src="./assets/share.svg" tabindex>Share</a>
+                        <a href="#"><img src="./assets/spotify.svg" tabindex>Spotify</a>
                     </div>
                 </div>
                 <!-- Twirl Song -->
                 <div class="audioLabel">
                     <h2>Twirl</h2>
                     <h5>Lorem ipsum dolor sit amet.</h5>
-                    <audio controls src="./assets/Twirl.mp3"></audio>
+                    <audio controls src="./assets/Twirl.mp3" download tabindex></audio>
                     <div class="audioButtonContainer">
-                        <a href="#"><img src="./assets/download.svg">Save</a>
-                        <a href="#"><img src="./assets/share.svg">Share</a>
-                        <a href="#"><img src="./assets/spotify.svg">Spotify</a>
+                        <a href="./assets/Twirl.mp3" download tabindex><img src="./assets/download.svg">Save</a>
+                        <a href="#"><img src="./assets/share.svg" tabindex>Share</a>
+                        <a href="#"><img src="./assets/spotify.svg" tabindex>Spotify</a>
                     </div>
                 </div>
 
@@ -100,8 +101,41 @@
             </div>
         </div>
     </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="linksContainer">
+            <div class="websiteLinks">
+                <ul>
+                    <li><a href="./">Home</a> </li>
+                    <li><a href="#music">Music</a></li>
+                </ul>
+            </div>
+            <div class="musicLinks">
+                <ul>
+                    <li><a href="">Spotify</a></li>
+                    <li><a href="">Apple Music</a></li>
+                    <li><a href="">Prime Music</a></li>
+                    <li><a href="">Sound Cloud</a></li>
+                </ul>
+            </div>
+            <div class="socialMediaLinks">
+                <ul>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="">Facebook</a></li>
+                    <li><a href="">Youtube</a></li>
+                    <li><a href="">TikTok</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="SocialMedia"></div>
 
-    <br><br><br>
+        <!-- copyright -->
+        <div class="copyright">Copyright ©
+            <script>
+                var CurrentYear = new Date().getFullYear();
+                document.write(CurrentYear)
+            </script> - OT - Flex Official</div>
+    </footer>
 
 
     <script src="./main.js"></script>
