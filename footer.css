@@ -29,15 +29,26 @@
 #footer ul{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
+#footer ul li{
+    margin-bottom: 5px;
+}
+
 #footer a{
     color: var(--black);
     text-decoration: none;
     white-space: nowrap;
 }
 
+#footer a:hover{
+    color: var(--cinnabar);
+    white-space: nowrap;
+    transition: cubic-bezier(1, 0, 0, 1);
+    transition-duration: 200ms;
+    border-bottom: 1px solid var(--cinnabar);
+}
 @media (min-width: 800px) {
 
     .linksContainer{
